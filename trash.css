@@ -1,0 +1,87 @@
+/* --- Mobile: 480px Breakpoint --- */
+@media screen and (max-width: 480px) {
+  /* Show the menu icon image */
+  .menu-label {
+    display: block;
+    cursor: pointer;
+  }
+  #menu-icon-img {
+    width: 30px;
+    /* Adjust size as needed */
+    height: auto;
+  }
+  /* Hide the nav capsule by default on mobile */
+  .nav-capsule {
+    display: none;
+    position: absolute;
+    top: 100%; /* Sits right under the header */
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column; /* Stack links
+vertically */
+    padding: 20px;
+    text-align: center;
+  } /* THE MAGIC: When checkbox
+is checked, show the nav */
+  #menu-bar:checked ~ .nav-capsule {
+    display: flex;
+  }
+  /* Style the vertical links */
+  .nav-capsule a {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+  <br>
+  <br>
+ 
+.main-header {
+  flex-direction: column;
+  right: 0;
+  left: 0;
+}
+.nav-capsule {
+  flex-direction: column;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.nav-links {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-label {
+  display: block;
+  cursor: pointer;
+}
+#menu-icon-img {
+  width: 30px;
+  /* Adjust size as needed */
+  height: auto;
+  align-self: flex-end; /* Aligns the menu icon to the right */
+}
+/* Hide the nav capsule by default on mobile */
+.nav-capsule {
+  display: none;
+  position: absolute;
+  top: 100%; /* Sits right under the header */
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  flex-direction: column; /* Stack links vertically */
+  padding: 20px;
+  text-align: center;
+}
+/* THE MAGIC: When checkbox is checked, show the nav */
+#menu-bar:checked ~ .nav-capsule {
+  display: flex;
+}
+/* Style the vertical links */
+.nav-capsule a {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);

@@ -19,3 +19,17 @@ font-weight: bold; height: 40px; align-items: center; } .ticker-label { padding:
 white-space: nowrap; animation: scroll-text 20s linear infinite; } @keyframes
 scroll-text { 0% { transform: translateX(100%); } 100% { transform:
 translateX(-100%); } } /* the end of the breaking news ticker */
+
+<br />
+<br />
+
+<br />
+<br />
+@media (max-width: 768px) { .main-header { flex-direction: column; gap: 15px;
+padding: 15px 20px; } .nav-capsule { width: 100%; height: auto; flex-direction:
+column; justify-content: center; } .nav-links { flex-direction: column; gap:
+15px; } .home-container { padding-top: 120px; } .hero-grid { flex-direction:
+column; } .main-story img { width: 100%; /* Takes up the full width of the
+parent container */ height: auto; /* Keeps the image from looking stretched */
+display: block; /* Removes the weird gap at the bottom of images */ object-fit:
+cover; /* Ensures it fills the area nicely if you have a fixed height */ } }

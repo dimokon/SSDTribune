@@ -23,11 +23,15 @@
         </h1>
       </div>
 
-      <nav class="nav-capsule">
+      <button id="menu-toggle" aria-expanded="false" aria-controls="site-nav" class="menu-toggle">
+        ☰
+      </button>
+
+      <nav id="site-nav" class="nav-capsule">
         <ul class="nav-links">
           <li><a href="index.html">HOME</a></li>
           <li><a href="regional.html">REGIONAL</a></li>
-          <li><a href="#">SOCIO-POLITICAL</a></li>
+          <li><a href="sociopolitical.html">SOCIO-POLITICAL</a></li>
           <li><a href="#">FAMILY SUPPORT</a></li>
           <li><a href="#">SCIENCE-ACADEMICS</a></li>
           <li><a href="#">YOUTH & OPPORTUNITIES</a></li>
@@ -37,11 +41,26 @@
           <span class="search-icon">🔍</span>
         </div>
       </nav>
+      <button id="toggle">☀️</button>
     </header>
-
     <main class="home-container">
+      <section class="slider-container">
+        <div id="slider-container"></div>
+        <div class="slider-controls">
+          <button id="prev-slide" aria-label="Previous slide">Prev</button>
+          <button id="next-slide" aria-label="Next slide">Next</button>
+        </div>
+      </section>
+      <section class="stats">
+        <span class="seconds-counter">0</span>
+      </section>
       <section class="hero-grid">
         <article class="main-story">
+          <img
+            src="./images/war.avif"
+            alt="Conflict in South Sudan"
+            class="hero-img"
+          />
           <div class="category-tag">CRISIS ALERT</div>
           <div class="story-content">
             <h2>It is Indisputable: South Sudan Has Returned to War</h2>
@@ -83,30 +102,76 @@
           </div>
         </aside>
       </section>
-      <br />
-      <br />
-      <section class="category-section">
-        <h3 class="section-title">REGIONAL REPORTS</h3>
-        <div class="news-grid">
-          <div class="grid-card">
-            <div class="card-img"></div>
-            <h4>Bahr el Ghazal faces severe water shortages</h4>
-          </div>
-          <div class="grid-card">
-            <div class="card-img"></div>
-            <h4>Equatoria farmers struggle with road blockades</h4>
-          </div>
-          <div class="grid-card">
-            <div class="card-img"></div>
-            <h4>Upper Nile: New school opening delayed by conflict</h4>
+
+      <section class="about-mission">
+        <div class="mission-content">
+          <h2>The Voice of the People</h2>
+          <p>
+            Established in 2026, <strong>SSD Tribune</strong> is dedicated to
+            independent, ground-level journalism. In a landscape often clouded
+            by conflict, we strive to provide the raw truth from the streets of
+            Juba to the furthest reaches of the ten states.
+          </p>
+          <div class="mission-stats">
+            <div><span>10</span> States Covered</div>
+            <div><span>24/7</span> Live Updates</div>
+            <div><span>100%</span> Independent</div>
           </div>
         </div>
+      </section>
+      <section class="opinion-section">
+        <h3>OPINION & ANALYSIS</h3>
+        <div class="opinion-grid">
+          <div class="opinion-card">
+            <p>"Why the upcoming elections require more than just ballots."</p>
+            <span>— Dr. John Akot, Political Analyst</span>
+          </div>
+          <div class="opinion-card">
+            <p>
+              "The hidden cost of the currency devaluation on Juba's youth."
+            </p>
+            <span>— Mary Nyandeng, Economist</span>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="newsletter-box">
+          <h3>Get the Crisis Report in your Inbox</h3>
+          <p>Sign up for our daily morning briefing.</p>
+          <form class="news-form">
+            <input type="email" placeholder="Enter your email..." />
+            <button type="button">SUBSCRIBE</button>
+          </form>
+        </div>
+      </section>
+      <section class="identity-section">
+        <article class="identity-card">
+          <h3>VISION</h3>
+          <p>
+            To be a trusted source of accurate and timely news that keeps people
+            informed and aware of what matters most.
+          </p>
+        </article>
+        <article class="identity-card">
+          <h3>MISSION</h3>
+          <p>
+            To deliver reliable, unbiased and easy-to-understand news across a
+            wide range of topics, anytime and anywhere.
+          </p>
+        </article>
+        <article class="identity-card">
+          <h3>VALUES</h3>
+          <p>
+            We are committed to accuracy, integrity, fairness, transparency, and
+            serving the public with honest and responsible journalism.
+          </p>
+        </article>
       </section>
     </main>
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-col">
-          <h2 class="logo">Sudan<span>Tribune</span></h2>
+          <h2 class="logo">SSD<span>Tribune</span></h2>
           <p class="footer-about">
             Independent, critical, and ground-level reporting from Juba and
             beyond. Documenting the reality of a nation in transition.
@@ -137,5 +202,6 @@
         <p>&copy; 2026 SSD Tribune. For Educational Purposes.</p>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
