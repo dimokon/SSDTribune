@@ -108,6 +108,15 @@ footer {
   transform: scale(1.05);
 }
 
+/* Stats Section */
+.stats {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--black);
+  margin: 20px 0;
+  font-weight: bold;
+}
+
 /* main */
 .home-container {
   max-width: 1200px;
@@ -119,6 +128,17 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+
+#live-time {
+  font-family: "Georgia", serif;
+  font-size: 13px;
+  color: #fff;
+  background-color: #cc0000; /* red news banner */
+  padding: 6px 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* Main Story Card */
